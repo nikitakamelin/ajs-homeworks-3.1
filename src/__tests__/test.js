@@ -10,7 +10,7 @@ const dataList = [
 
 test.each(dataList)('test healthCheck function with %s health', (_, object, expected) => {
   const result = healthCheck(object);
-   
+
   expect(result).toBe(expected);
 });
 
